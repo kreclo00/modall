@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+    <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="main-header">
+                <img src="assets/image/header/logo.png" alt="" class="logo">
+                <div class="nav header-menu">
+                    <div class="dropdown">
+                        <a href="#" onclick="toggleDropdown(event, 'dropdown1')" class="dropbtn">Product</a>
+                        <div id="dropdown1" class="dropdown-content">
+                            <a href="#">ТУДА</a>
+                            <a href="#">сюда</a>
+                            <a href="#">никуда</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" onclick="toggleDropdown(event, 'dropdown2')" class="dropbtn">Developers</a>
+                        <div id="dropdown2" class="dropdown-content">
+                            <a href="#">ТУДА</a>
+                            <a href="#">сюда</a>
+                            <a href="#">никуда</a>
+                        </div>
+                    </div>
+
+                    <a href="">Beta</a>
+                    <a href="">Pricing</a>
+                </div>
+            </div>
+            <div class="header-links">
+                <button class="btn" onclick="openModal('login')">start your project</button>
+                <button class="btn" onclick="openModal('register')">sign in</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="container">
+            <div class="banner-text">
+                <div class="subtitle">
+                    <img src="assets/image/banner/icon.png" alt="">
+                    <p>Storage</p>
+                </div>
+                <h1>Store and serve <br>any type of digital content</h1>
+                <p>An open source Object store service with unlimited scalability, for any file type. <br><br>With
+                    custom policies and permissions that are familiar and easy to implement.</p>
+                <a href="" class="btn">Start a project</a>
+            </div>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="assets/image/banner/banner-img.png" alt=""></div>
+                    <div class="slide"><img src="assets/image/banner/3c14e6dbe5aa07efb134012fb64d5128.jpg" alt=""></div>
+                    <div class="slide"><img src="assets/image/banner/dd3fa07b754f106d1c85029566ffe5b6.jpg" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- preim -->
+    <div class="preim">
+        <div class="container">
+            <div class="preim-block">
+                <div class="p-block">
+                    <div class="p-block-img">
+                        <img src="assets/image/preim/Frame-5.png" alt="">
+                        <img src="assets/image/preim/Frame-2.png" alt="">
+                        <img src="assets/image/preim/Frame-3.png" alt="">
+                        <img src="assets/image/preim/Frame-4.png" alt="">
+                        <img src="assets/image/preim/Frame-1.png" alt="">
+                    </div>
+                    <h3>Interoperable</h3>
+                    <p>Integrates well with the rest of Supabase ecosystem, including Auth and Postgres.</p>
+                </div>
+                <div class="p-block">
+                    <img src="assets/image/preim/Frame.png" alt="">
+                    <h3>Lightning fast</h3>
+                    <p>Thin API server layer that leverages Postgres' permissions and performance.</p>
+                </div>
+                <div class="p-block">
+                    <img src="assets/image/preim/Frame-6.png" alt="">
+                    <h3>Dependable</h3>
+                    <p>Enterprise-level scalability and durability.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div class="about">
+        <div class="container">
+            <h2>Sleek dashboard for managing your media</h2>
+            <p>A complete Object Explorer so that any of your team can use. <br><br><span>Drag and drop uploading,
+                    moving
+                    objects, and multiple object selection. As easy as working on your desktop.</span></p>
+            <div class="about-block">
+                <div class="about-main-block">
+                    <div class="filter">
+                        <button class="btn-filter active">File previews</button>
+                        <button class="btn-filter">Column view</button>
+                        <button class="btn-filter">List view</button>
+                        <button class="btn-filter">Multi select actions</button>
+                        <button class="btn-filter">Path navigator</button>
+                    </div>
+
+                    <div class="about-block-imgages">
+                        <img src="assets/image/about/about-img.png" alt="" class="about-img active">
+                        <img src="assets/image/about/Rectangle 5.png" alt="" class="about-img">
+                        <img src="assets/image/about/Rectangle 4.png" alt="" class="about-img">
+                        <img src="assets/image/about/Rectangle 2.png" alt="" class="about-img">
+                        <img src="assets/image/about/Rectangle 1.png" alt="" class="about-img">
+                    </div>
+                </div>
+                <div class="about-other-blocks">
+                    <div class="about-other-block active">
+                        <h3>File previews</h3>
+                        <p>Preview any media type, including video and audio.</p>
+                        <h3>Check out our example app</h3>
+                        <div class="info-block">
+                            <h4>Profile management example</h4>
+                            <p>Update a user account with public profile<br> information, including uploading a profile
+                                image.</p>
+                            <div class="created">
+                                <p>Created by:</p>
+                                <img src="assets/image/about/Rectangle.png" alt="">
+                                <span>supabase</span>
+                            </div>
+                        </div>
+                        <div class="managment-text">
+                            <p>nextjs-ts-user-management</p>
+                            <img src="assets/image/about/Frame.png" alt="">
+                        </div>
+                        <a href="" class="btn">
+                            <p class="triangle">▲</p>
+                            <p>Deploy</p>
+                        </a>
+                    </div>
+                    <div class="about-other-block">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, autem!</p>
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <div class="info-block">
+                            <h4>Next.js E-commerce Demo</h4>
+                            <p> Perfect for community platforms or customer support.</p>
+                            <div class="created">
+                                <p>Created by:</p>
+                                <img src="assets/image/about/Rectangle.png" alt="">
+                                <span>supabase</span>
+                            </div>
+                        </div>
+                        <div class="managment-text">
+                            <p>nextjs-ts-user-management</p>
+                            <img src="assets/image/about/Frame.png" alt="">
+                        </div>
+                        <a href="" class="btn">
+                            <p class="triangle">▲</p>
+                            <p>Deploy</p>
+                        </a>
+                    </div>
+                    <div class="about-other-block">
+                        <h3>Чат в реальном времени</h3>
+                        <p>Создайте мессенджер с индикаторами присутствия и набора текста.</p>
+                        <h3>Посмотрите пример приложения</h3>
+                        <div class="info-block">
+                            <h4>Next.js Kanban Board</h4>
+                            <p>cart management, and secure checkout.</p>
+                            <div class="created">
+                                <p>Created by:</p>
+                                <img src="assets/image/about/Rectangle.png" alt="">
+                                <span>supabase</span>
+                            </div>
+                        </div>
+                        <div class="managment-text">
+                            <p>nextjs-ts-user-management</p>
+                            <img src="assets/image/about/Frame.png" alt="">
+                        </div>
+                        <a href="" class="btn">
+                            <p class="triangle">▲</p>
+                            <p>Deploy</p>
+                        </a>
+                    </div>
+                    <div class="about-other-block">
+                        <h3>Интернет-магазин</h3>
+                        <p>Полноценный онлайн-магазин с карточками товаров</p>
+                        <h3>Посмотрите пример приложения</h3>
+                        <div class="info-block">
+                            <h4>Next.js Realtime Chat</h4>
+                            <p>due dates, and team collaboration.</p>
+                            <div class="created">
+                                <p>Created by:</p>
+                                <img src="assets/image/about/Rectangle.png" alt="">
+                                <span>supabase</span>
+                            </div>
+                        </div>
+                        <div class="managment-text">
+                            <p>nextjs-ts-user-management</p>
+                            <img src="assets/image/about/Frame.png" alt="">
+                        </div>
+                        <a href="" class="btn">
+                            <p class="triangle">▲</p>
+                            <p>Deploy</p>
+                        </a>
+                    </div>
+                    <div class="about-other-block">
+                        <h3>Менеджер задач</h3>
+                        <p>Организуйте задачи с помощью drag-and-drop</p>
+                        <h3>Посмотрите пример приложения</h3>
+                        <div class="info-block">
+                            <h4>Profile management example</h4>
+                            <p>Includes password recovery and session management.</p>
+                            <div class="created">
+                                <p>Created by:</p>
+                                <img src="assets/image/about/Rectangle.png" alt="">
+                                <span>supabase</span>
+                            </div>
+                        </div>
+                        <div class="managment-text">
+                            <p>Next.js Auth with Supabase</p>
+                            <img src="assets/image/about/Frame.png" alt="">
+                        </div>
+                        <a href="" class="btn">
+                            <p class="triangle">▲</p>
+                            <p>Deploy</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- faq -->
+    <div class="faq">
+        <div class="container">
+            <h2>Integrates natively <br>with Supabase Auth</h2>
+            <div class="accordion-item">
+                <button class="accordion">
+                    Using Postgres Row Level Security to create Object access rules.
+                    <img src="assets/image/faq/Arrow 1.png" alt="">
+                </button>
+                <div class="panel">
+                    <p>
+                        Storage Authorization is built around Postgres so that you can use any combination of SQL,
+                        Postgres functions, and even your own metadata to write policies.Storage Authorization is built
+                        around Postgres so that you can use any combination of SQL, Postgres functions, and even your
+                        own metadata to write policies.Storage is built around Postgres so that you can use any
+                        combination of SQL, Postgres functions, and even your own metadata to write policies.
+                    </p>
+                    <a href="">Explore documentation</a>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion">
+                    Using Postgres Row Level Security to create Object access rules.
+                    <img src="assets/image/faq/Arrow 1.png" alt="">
+                </button>
+                <div class="panel">
+                    <p>
+                        Storage Authorization is built around Postgres so that you can use any combination of SQL,
+                        Postgres functions, and even your own metadata to write policies.Storage Authorization is built
+                        around Postgres so that you can use any combination of SQL, Postgres functions, and even your
+                        own metadata to write policies.Storage is built around Postgres so that you can use any
+                        combination of SQL, Postgres functions, and even your own metadata to write policies.
+                    </p>
+                    <a href="">Explore documentation</a>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion">
+                    Using Postgres Row Level Security to create Object access rules.
+                    <img src="assets/image/faq/Arrow 1.png" alt="">
+                </button>
+                <div class="panel">
+                    <p>
+                        Storage Authorization is built around Postgres so that you can use any combination of SQL,
+                        Postgres functions, and even your own metadata to write policies.Storage Authorization is built
+                        around Postgres so that you can use any combination of SQL, Postgres functions, and even your
+                        own metadata to write policies.Storage is built around Postgres so that you can use any
+                        combination of SQL, Postgres functions, and even your own metadata to write policies.
+                    </p>
+                    <a href="">Explore documentation</a>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion">
+                    Using Postgres Row Level Security to create Object access rules.
+                    <img src="assets/image/faq/Arrow 1.png" alt="">
+                </button>
+                <div class="panel">
+                    <p>
+                        Storage Authorization is built around Postgres so that you can use any combination of SQL,
+                        Postgres functions, and even your own metadata to write policies.Storage Authorization is built
+                        around Postgres so that you can use any combination of SQL, Postgres functions, and even your
+                        own metadata to write policies.Storage is built around Postgres so that you can use any
+                        combination of SQL, Postgres functions, and even your own metadata to write policies.
+                    </p>
+                    <a href="">Explore documentation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="main-footer-block">
+                <div class="footer-left">
+                    <img src="assets/image/header/logo.png" alt="Logo" class="logo" />
+                    <div class="social-icons">
+                        <a href="#"><img src="assets/image/footer/Frame.png" alt="Twitter" /></a>
+                        <a href="#"><img src="assets/image/footer/Frame-1.png" alt="GitHub" /></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="column">
+                        <h4>Product</h4>
+                        <a href="#">Database</a>
+                        <a href="#">Authentication</a>
+                        <a href="#">Storage</a>
+                        <a href="#">Functions</a>
+                        <a href="#">Coming soon</a>
+                        <a href="#">Pricing</a>
+                    </div>
+                    <div class="column">
+                        <h4>Resources</h4>
+                        <a href="#">Support</a>
+                        <a href="#">Case Studies</a>
+                        <a href="#">System Status</a>
+                        <a href="#">Terms of service</a>
+                    </div>
+                    <div class="column">
+                        <h4>Developers</h4>
+                        <a href="#">Documentation</a>
+                        <a href="#">API Reference</a>
+                        <a href="#">Guides</a>
+                    </div>
+                    <div class="column">
+                        <h4>Company</h4>
+                        <a href="#">Blog</a>
+                        <a href="#">Open Source</a>
+                        <a href="#">Humans.txt</a>
+                        <a href="#">Lawyers.txt</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© Supabase Inc</p>
+                <div class="theme-toggle">
+                    <img src="assets/image/footer/Frame-3.png" alt="Sun" />
+                    <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider"></span>
+                    </label>
+                    <img src="assets/image/footer/Frame-4.png" alt="Moon" />
+                </div>
+            </div>
+        </div>
+    </footer>
+  <!-- Модальное окно Вход -->
+  <div id="modal-login" class="modal-backdrop">
+    <div class="modal">
+      <button class="close-btn" onclick="closeModal('login')">×</button>
+      <h2>Вход</h2>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Пароль" />
+      <button class="submit">Войти</button>
+      <p>Нет аккаунта? <button onclick="switchModal('login', 'register')">Регистрация</button></p>
+    </div>
+  </div>
+
+  <!-- Модальное окно Регистрация -->
+  <div id="modal-register" class="modal-backdrop">
+    <div class="modal">
+      <button class="close-btn" onclick="closeModal('register')">×</button>
+      <h2>Регистрация</h2>
+      <input type="text" placeholder="Имя" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Пароль" />
+      <button class="submit">Зарегистрироваться</button>
+      <p>Уже есть аккаунт? <button onclick="switchModal('register', 'login')">Войти</button></p>
+    </div>
+  </div>
+
+</body>
+
+</html>
